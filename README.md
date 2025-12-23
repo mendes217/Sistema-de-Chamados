@@ -1,85 +1,83 @@
-🎯 Objetivo
+<div align ="center;">
+    <img src="https://github.com/user-attachments/assets/9358e3a7-cd9d-4c96-bdf6-80bbe30bd593" style="width: 180px; height: 150px;" alt="Logo do sistema;align: center;">
+    <p >
+    Sistema de Chamados e Respostas, Integrado com Inteligência Artificial (IA).
+    </p>
+</div>
 
-O principal objetivo do TecPorte é:
+### 📕 Sobre
+    
+**TecPorte** Sistema de Chamados desenvolvido para Workshop
+ da universidade Unip-Tatuape.
 
-Facilitar a comunicação entre usuários e servidores responsáveis ​​da universidade
+### 🎯 Objetivo
+A **Tec Porte** é uma empresa voltada para o desenvolvimento de soluções tecnológicas 
+aplicadas a institutos acadêmicos. Seu objetivo é promover uma melhoria significativa na 
+comunicação entre a instituição, seus estudantes, professores e colaboradores, tornando 
+as interações mais eficientes, acessíveis e seguras.
+além disso esse  projeto foi desenvolvido com o objetivo de:
+- Consolidar conhecimentos em desenvolvimento backend
+- Aplicar conceitos de API REST
+- Trabalhar regras de negócio reais
+- Demonstrar habilidades práticas para vagas de estágio ou desenvolvedor júnior 
+### 🛠️ Tecnologias Utilizadas
 
-Centralizar o gerenciamento de tarefas técnicas
+- C# (.NET 8)
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server
+- JWT (JSON Web Token) para autenticação
+- Swagger (OpenAPI) para documentação da API
+### 🚀 Funcionalidades
 
-Reduzir o tempo de resposta por meio do uso de IA
+- Cadastro e autenticação de usuários
+- Controle de permissões (Usuário, Técnico e Administrador)
+- Abertura de chamados de suporte
+- Alteração de status dos chamados (Aberto, Em andamento, Resolvido)
+- Comentários e histórico de interações
+- Filtros por status, prioridade e data
+- Registro de data de criação e atualização dos chamados
 
-Integrar-se aos sistemas acadêmicos já existentes
+---
 
-🛠️ Funcionalidades Principais
+### 🗂️ Modelagem de Dados
 
-📋 Abertura de chamados técnicos (dúvidas ou problemas)
+Principais entidades do sistema:
+- Usuário
+- Perfil
+- Chamado
+- Comentário
 
-🏢 Direcionamento automático dos chamados para setores responsáveis
+O relacionamento entre as entidades foi pensado para refletir cenários reais de um sistema de suporte técnico.
 
-🤖 Suporte por Inteligência Artificial para respostas e soluções em tempo real
+---
 
-🔍 Consulta e acompanhamento do status dos chamados
+### 🔐 Autenticação e Segurança
 
-🔐 Integração segura com banco de dados
+A autenticação da API é realizada utilizando JWT (JSON Web Token).
 
-🖥️ Interface desktop amigável
+Após o login, o token deve ser enviado em todas as requisições protegidas no header:
 
-🧱 Arquitetura do Sistema
+As permissões de acesso variam conforme o perfil do usuário.
 
-O TecPorte utiliza uma arquitetura baseada em cliente-servidor , composta por:
+---
 
-Aplicação Desktop desenvolvida em Windows Forms
+## ▶️ Como Executar o Projeto
 
-API própria , responsável pela comunicação entre o sistema e o banco de dados
+### Pré-requisitos
+- .NET 8 SDK
+- SQL Server
+- Visual Studio ou Visual Studio Code
 
-Banco de dados utilizando SQL Server
+### Passos para execução
 
-A API atua como interativa, garantindo organização, segurança e escalabilidade na comunicação com o banco de dados.
+```bash
+git clone https://github.com/mendes217/Sistema-de-Chamados.git
+cd Sistema-Chamados-api
+dotnet restore
+dotnet run
 
-🔗 Integração com API
 
-O sistema realiza conexão com uma API desenvolvida especificamente para o projeto , responsável por:
 
-Gerenciar operações CRUD
 
-Validar dados
 
-Realizar a comunicação direta com o banco de dados SQL Server
-
-Garantir a integridade das informações
-
-🗄️ Banco de Dados
-
-Banco de dados Sql Server
-
-Estruturado para armazenar usuários, chamados, setores e respostas
-
-Conexão realizada via API para maior segurança e controle
-
-🎓 Contexto Acadêmico
-
-Este projeto foi desenvolvido como parte de um trabalho universitário , com foco em:
-
-Aplicação prática de conceitos de desenvolvimento de software
-
-Integração entre sistemas
-
-Arquitetura de aplicações
-
-Usabilidade e organização de interfaces
-
-Uso de Inteligência Artificial como apoio ao usuário
-
-🚀 Tecnologias Utilizadas
-
-C#
-
-Formulários do Windows
-
-API REST
-
-Servidor SQL
-
-Inteligência Artificial (IA)
-
-.NET Framework / .NET
