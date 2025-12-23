@@ -75,7 +75,7 @@ As permissões de acesso variam conforme o perfil do usuário.
 
 ```bash
 git clone https://github.com/mendes217/Sistema-de-Chamados.git
-cd Sistema-Chamados-api
+cd Sistema-Chamados
 dotnet restore
 dotnet run
 
